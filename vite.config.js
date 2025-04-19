@@ -5,6 +5,7 @@ import { resolve } from "node:path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/To-do-list-2",
   plugins: [TanStackRouterVite({ autoCodeSplitting: true }), viteReact()],
   server: {
     watch: { usePolling: true },
