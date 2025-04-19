@@ -3,7 +3,7 @@ import { AuthContext } from "../context/Context";
 import { useContext } from "react";
 
 export function User() {
-  const { login, setLogin } = useContext(AuthContext);
+  const { setLogin } = useContext(AuthContext);
 
   const handleLogout = () => {
     localStorage.removeItem("Email");

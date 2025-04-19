@@ -1,4 +1,4 @@
-import { signUpSchema, type TSignUpSchema } from "@/lib/types";
+import type { TSignUpSchema } from "@/lib/types";
 
 export function setLocalStorageEmail({ email }: TSignUpSchema): void {
   localStorage.setItem("Email", email);

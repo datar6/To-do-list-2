@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import "../styles/signUp.css";
-import { useForm, type SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { signUpSchema, type TSignUpSchema } from "@/lib/types";
 import {
@@ -25,8 +25,6 @@ function SignUpComponent() {
   const navigate = useNavigate({ from: "/signUp" });
 
   const onSubmit = async (data: TSignUpSchema) => {
-    // await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log(data);
     setLocalStorageEmail(data);
     setLocalStoragePassword(data);
     reset();
