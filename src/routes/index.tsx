@@ -15,9 +15,8 @@ function HomeComponent() {
     <div className="home-page-box">
       <div className="home-page-wrapper">
         {login ? (
-          <User /> // Приватный контент для авторизованных
+          <User />
         ) : (
-          // Публичный контент для гостей
           <>
             <h1 className="greeting">Welcome to home page</h1>
             <Link to="/signUp" className="sign-up-link">
