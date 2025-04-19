@@ -1,0 +1,112 @@
+h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  background-color: rgba(250, 213, 157, 0.734);
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.signUp-form > input {
+  border: none;
+  outline: none;
+  width: 25vw;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.signUp-form > button {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(212, 180, 131, 0.626);
+  color: white;
+  font-size: large;
+  margin-top: 20px;
+}
+
+.signUp-form > button:hover {
+  background-color: rgba(212, 180, 131, 1);
+}
+
+.corner {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 20px;
+  /* background-color: rgb(182, 222, 222); */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.corner > div {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.corner > div:nth-child(1) {
+  background-color: rgb(57, 223, 57);
+}
+
+.corner > div:nth-child(2) {
+  background-color: rgb(233, 242, 233);
+}
+
+.corner > div:nth-child(3) {
+  background-color: rgb(245, 65, 20);
+}
+
+.red {
+  color: red;
+}
+
+.wrapper:has(.signUp-form input:hover) .corner > div:nth-child(odd) {
+  border-radius: 0%;
+
+  transform: rotate(45deg);
+}
+
+.wrapper:has(.signUp-form button:active) .corner > div:nth-child(2) {
+  height: 18px;
+  width: 18px;
+  background-color: rgb(57, 223, 57);
+}
+
+.wrapper:has(.signUp-form button:active) .corner > div:nth-child(odd) {
+  height: 0;
+  width: 0;
+}

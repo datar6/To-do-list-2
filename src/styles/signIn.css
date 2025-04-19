@@ -1,0 +1,47 @@
+.sign-in-box {
+  height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-container {
+  box-sizing: border-box;
+  background-color: rgba(250, 213, 157, 0.734);
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.sign-in-form > input {
+  border: none;
+  outline: none;
+  width: 25vw;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.sign-in-form > button {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(212, 180, 131, 0.626);
+  color: white;
+  font-size: large;
+  margin-top: 20px;
+}
+
+.sign-in-form > button:hover {
+  background-color: rgba(212, 180, 131, 1);
+}
+
+.sign-up-link:link {
+  text-decoration: none;
+}

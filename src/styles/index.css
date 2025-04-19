@@ -1,0 +1,28 @@
+.home-page-box {
+  height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-wrapper {
+  box-sizing: border-box;
+  background-color: rgba(250, 213, 157, 0.734);
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  position: relative;
+}
+
+.sign-in-link:link {
+  text-decoration: none;
+}
+
+.sign-up-link:link {
+  text-decoration: none;
+}
